@@ -1,0 +1,10 @@
+version: "1"
+services:
+  main_app:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    image: sthajay/assignment3:1.0
+    container_name: assignment3
+    command: npm start --host 0.0.0.0
